@@ -31,7 +31,7 @@ Script CLI interactif pour lancer automatiquement un serveur Flask ou FastAPI su
 ```bash
 chmod +x vstart_kali_vps.sh
 ./vstart_kali_vps.sh
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0007--7571--3178-green.svg)](https://orcid.org/0009-0007-7571-3178)
+
 Compatible Termux / Kali / Ubuntu VPS
 
 ---
@@ -42,3 +42,6 @@ Compatible Termux / Kali / Ubuntu VPS
 ```bash
 nano README.md
 
+...
+
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0007--7571--3178-green.svg)](https://orcid.org/0009-0007-7571-3178)

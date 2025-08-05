@@ -1,0 +1,23 @@
+# Fichiers trop volumineux
+swapfile
+*.tar.xz
+
+# Cache pip et temporaires
+.cache/
+__pycache__/
+*.pyc
+
+# Archives générées (ne pas réinclure les ZIP/APK dans le repo)
+*.zip
+*.apk
+
+# ISO, images, etc.
+*.iso
+*.img
+
+# Fichiers d’éditeur & OS
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+ehthumbs.db

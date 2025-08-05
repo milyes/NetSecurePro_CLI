@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>IA22 DZERO Interface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>IA22 DZERO – Moteur IA</h1>
+  <form method="GET" onsubmit="runIA(); return false;">
+    <input type="text" id="prompt" placeholder="Entrez votre prompt...">
+    <button type="submit">Lancer IA</button>
+  </form>
+  <pre id="output"></pre>
+
+  <script>
+    async function runIA() {
+      const prompt = document.getElementById("prompt").value;
+      const output = await fetch(`/run?prompt=${encodeURIComponent(prompt)}`);
+      const text = await output.text();
+      document.getElementById("output").textContent = text;
+    }
+  </script>
+</body>
+</html>
